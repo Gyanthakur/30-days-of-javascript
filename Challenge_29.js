@@ -23,7 +23,7 @@ function raceWithTimeout(promises, timeout) {
   const promise3 = new Promise((resolve, reject) => {
     setTimeout(() => reject(new Error('Error!')), 500);
   });
-  
+  // done 29 challenge
   raceWithTimeout([promise1, promise2, promise3], 700)
     .then((value) => {
       console.log('The first promise to resolve was:', value);
